@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= @page.title %> - <%= @site.name %></title>
+    <script async defer data-domain="venom.tialki.com" src="https://analytics.tialki.com/js/plausible.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    <style>
+      .font-bitter {
+        font-family: 'Bitter', serif;
+      }
+    </style>
+  </head>
+  <body class="font-bitter">
+    <h1 class="text-3xl font-bold text-blue-600 text-center"><a href="<%= base() %>"><%= @site.name %></a></h1>
+    <p class="text-center"><%= @site.description %></p>
+    <%= include "nav" %>
+    <main>
+      <%= @contents %>
+    </main>
+  </body>
+</html>

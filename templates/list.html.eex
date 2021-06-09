@@ -1,0 +1,12 @@
+<section class="w-96 mx-auto">
+<h2 class="font-bold"><%= @page.title %></h2>
+<ul>
+  <%= for x <- @all_posts do %>
+    <li>
+      <p><a class="text-blue-500" href="<%= x.url %>"><%= x.title %></a>
+      &mdash;
+      <span class="date"><%= x.date %></span></p>
+    </li>
+  <% end %>
+</ul>
+</section>

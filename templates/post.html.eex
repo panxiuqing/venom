@@ -1,0 +1,26 @@
+<section class="w-1/2 mx-auto">
+<h1 class="font-bold"><%= @page.title %></h1>
+<p class="text-sm">Posted on <%= @page.date %> by <%= @site.author %></p>
+<%= unless Enum.empty?(@page.tags) do %>
+  <div class="flex space-x-2 text-sm">
+    <p>Tags:</p>
+    <ul class="flex space-x-1">
+      <%= for t <- @page.tags do %>
+        <li class="text-blue-500"><a href="<%= t.list_url %>"><%= t.name %></a></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+<div class="mt-2 space-y-2">
+  <%= @contents %>
+</div>
+
+
+    <script src="https://utteranc.es/client.js"
+        repo="panxiuqing/venom"
+        issue-term="pathname"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+</section>
