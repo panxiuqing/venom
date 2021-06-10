@@ -1,5 +1,5 @@
-<ul class="flex space-x-2 font-bold justify-center font-bitter text-blue-500">
+<div class="flex justify-center mx-auto list-none space-x-2" style="width: 50%">
   <li><a href="<%= page "index" %>">Home</a></li>
   <li><a href="<%= page "about" %>">About</a></li>
   <li><a href="<%= base "posts" %>">Posts</a></li>
-</ul>
+</div>

@@ -1,4 +1,4 @@
-<section class="w-96 mx-auto">
+<section class="mx-auto" style="width: 30%">
 <h2 class="font-bold"><%= @page.title %></h2>
 <ul>
   <%= for x <- @all_posts do %>
