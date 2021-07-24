@@ -1,0 +1,11 @@
+---
+title: 微服务
+date: 2021-07-05
+tags: Architecture, 反骨
+---
+
+[Wiki 定义](https://zh.wikipedia.org/zh-cn/微服務)
+
+我愿意将一个 Web 应用类比为一个基于网络的计算机，那么微服务相当于其中的一个进程。
+
+## 不使用微服务会产生哪些问题
